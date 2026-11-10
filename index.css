@@ -41,10 +41,10 @@ svg.i{width:1em;height:1em;fill:none;stroke:currentColor;stroke-width:2;stroke-l
 
 /* ============ HERO ============
    The picture itself is set in the HTML (style="--hero-img: url(...)") */
-.hero{position:relative;height:calc(150vh - 120px);min-height:560px;color:#fff;
+.hero{position:relative;height:calc(130vh - 120px); height:calc(100svh - 120px);color:#fff;
   background:
     linear-gradient(90deg,rgba(0,0,0,.55),rgba(0,0,0,.05) 60%),
-    var(--hero-img, linear-gradient(135deg,#90a4ae,#cfd8dc)) center/cover no-repeat;
+    var(--hero-img, linear-gradient(135deg,#90a4ae,#cfd8dc)) 100% center/cover no-repeat;
   display:flex;align-items:center;padding:0 90px;overflow:hidden}
 .hero-text{max-width:620px;animation:rise .7s ease both}
 .hero h1{font-size:clamp(56px,9vw,112px);line-height:.98;font-weight:800;letter-spacing:-2px;text-shadow:0 4px 20px rgba(0,0,0,.3)}
@@ -62,7 +62,7 @@ svg.i{width:1em;height:1em;fill:none;stroke:currentColor;stroke-width:2;stroke-l
 .float a:hover{width:72px;margin-left:-12px}
 .f-amb{background:var(--red);border-radius:30px 0 0 0}
 .f-call{background:#18b5c9}
-.f-wa{background:#16a116}
+.f-wa{background:#16a116; border-radius:0 0 0 0px;}
 
 @keyframes rise{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
 
